@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Analytics | TaskFlow</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/analytics.css">
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <h2 class="logo">TaskFlow</h2>
+
+        <ul class="menu">
+
+            <li><a href="dashboard.html">🏠 Dashboard</a></li>
+            <li><a href="calendar.html">📅 Calendar</a></li>
+            <li><a href="analytics.html">📊 Analytics</a></li>
+            <li><a href="settings.html">⚙ Settings</a></li>
+            <li><a href="#" id="logoutBtn">🚪 Logout</a></li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <h1>Analytics Dashboard</h1>
+
+            <div class="profile">
+                🔔 👤
+            </div>
+
+        </header>
+
+        <!-- Statistics -->
+
+        <section class="stats">
+
+            <div class="card">
+                <h3>Total Tasks</h3>
+                <p id="totalTasks">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Completed</h3>
+                <p id="completedTasks">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Pending</h3>
+                <p id="pendingTasks">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Completion</h3>
+                <p id="completionRate">0%</p>
+            </div>
+
+        </section>
+
+        <!-- Progress -->
+
+        <section class="progress-section">
+
+            <h2>Overall Progress</h2>
+
+            <div class="progress-bar">
+
+                <div class="progress-fill" id="progressFill"></div>
+
+            </div>
+
+        </section>
+
+        <!-- Priority -->
+
+        <section class="analytics-grid">
+
+            <div class="box">
+
+                <h2>Priority Breakdown</h2>
+
+                <p>🔴 High : <span id="highCount">0</span></p>
+
+                <p>🟡 Medium : <span id="mediumCount">0</span></p>
+
+                <p>🟢 Low : <span id="lowCount">0</span></p>
+
+            </div>
+
+            <div class="box">
+
+                <h2>Category Breakdown</h2>
+
+                <p>📚 Study : <span id="studyCount">0</span></p>
+
+                <p>💼 Work : <span id="workCount">0</span></p>
+
+                <p>🏃 Fitness : <span id="fitnessCount">0</span></p>
+
+                <p>🏠 Personal : <span id="personalCount">0</span></p>
+
+            </div>
+
+        </section>
+
+        <!-- Motivation -->
+         <section class="charts">
+
+    <div class="chart-card">
+
+        <h2>Tasks by Category</h2>
+
+        <canvas id="categoryChart"></canvas>
+
+    </div>
+
+    <div class="chart-card">
+
+        <h2>Completed vs Pending</h2>
+
+        <canvas id="statusChart"></canvas>
+
+    </div>
+
+</section>
+
+        <section class="message">
+
+            <h2>Your Productivity</h2>
+
+            <p id="motivation">
+                Keep going! 🚀
+            </p>
+
+        </section>
+
+    </main>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/analytics.js"></script>
+
+</body>
+
+</html>

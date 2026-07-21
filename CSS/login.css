@@ -1,0 +1,106 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F1F5F9;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-card{
+    width:420px;
+    background:#ffffff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.login-card h1{
+    color:#2563EB;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.login-card h2{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.login-card p{
+    text-align:center;
+    color:#64748B;
+    margin-bottom:30px;
+}
+
+.input-group{
+    margin-bottom:20px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:500;
+}
+
+.input-group input{
+    width:100%;
+    padding:12px;
+    border:1px solid #CBD5E1;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+}
+
+.input-group input:focus{
+    border-color:#2563EB;
+}
+
+.forgot-password{
+    display:block;
+    text-align:right;
+    text-decoration:none;
+    color:#2563EB;
+    margin-bottom:20px;
+    font-size:14px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#2563EB;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#1D4ED8;
+}
+
+.signup-link{
+    margin-top:20px;
+}
+
+.signup-link a{
+    color:#2563EB;
+    text-decoration:none;
+    font-weight:600;
+}

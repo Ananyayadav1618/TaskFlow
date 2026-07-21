@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Settings | TaskFlow</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="css/settings.css">
+
+</head>
+
+<body>
+
+<aside class="sidebar">
+
+<h2 class="logo">
+TaskFlow
+</h2>
+
+<ul class="menu">
+
+<li><a href="dashboard.html">🏠 Dashboard</a></li>
+
+<li><a href="calendar.html">📅 Calendar</a></li>
+
+<li><a href="analytics.html">📊 Analytics</a></li>
+
+<li><a href="settings.html">⚙ Settings</a></li>
+
+<li><a href="#" id="logoutBtn">🚪 Logout</a></li>
+
+</ul>
+
+</aside>
+
+<main class="main-content">
+
+<header class="topbar">
+
+<h1>Settings</h1>
+
+<div class="profile">
+
+👤
+
+</div>
+
+</header>
+
+<section class="settings-container">
+
+<div class="setting-card">
+
+<h2>Profile</h2>
+
+<label>Name</label>
+
+<input
+type="text"
+id="userName"
+placeholder="Enter your name">
+
+<button id="saveName">
+
+Save Name
+
+</button>
+
+</div>
+
+<div class="setting-card">
+
+<h2>Appearance</h2>
+
+<label>
+
+<input
+type="checkbox"
+id="darkMode">
+
+Enable Dark Mode
+
+</label>
+
+</div>
+
+<div class="setting-card">
+
+<h2>Notifications</h2>
+
+<label>
+
+<input
+type="checkbox"
+id="notifications">
+
+Enable Notifications
+
+</label>
+
+</div>
+
+<div class="setting-card">
+
+<h2>Danger Zone</h2>
+
+<button
+id="clearTasks">
+
+Clear All Tasks
+
+</button>
+
+</div>
+
+</section>
+
+</main>
+
+<script src="js/settings.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+/* ===========================
+   TABLET RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+    .sidebar{
+
+        width:200px;
+
+    }
+
+
+    .main-content{
+
+        padding:20px;
+
+    }
+
+
+    .stats{
+
+        flex-wrap:wrap;
+
+    }
+
+
+    .card{
+
+        flex:1 1 45%;
+
+    }
+
+
+    .topbar input{
+
+        width:250px;
+
+    }
+
+}
+
+
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+
+@media(max-width:600px){
+
+
+    body{
+
+        flex-direction:column;
+
+    }
+
+
+    .sidebar{
+
+        width:100%;
+
+        padding:20px;
+
+    }
+
+
+    .logo{
+
+        margin-bottom:20px;
+
+    }
+
+
+    .menu{
+
+        display:flex;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+
+    .menu li{
+
+        margin:5px;
+
+    }
+
+
+    .menu a{
+
+        padding:8px 12px;
+
+    }
+
+
+    .main-content{
+
+        padding:15px;
+
+    }
+
+
+    .topbar{
+
+        flex-direction:column;
+
+        gap:15px;
+
+        align-items:stretch;
+
+    }
+
+
+    .topbar input{
+
+        width:100%;
+
+    }
+
+
+    .profile{
+
+        text-align:right;
+
+    }
+
+
+    .welcome h1{
+
+        font-size:28px;
+
+    }
+
+
+    .stats{
+
+        flex-direction:column;
+
+    }
+
+
+    .card{
+
+        width:100%;
+
+    }
+
+
+    .task-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:15px;
+
+    }
+
+
+    #addTaskBtn{
+
+        width:100%;
+
+    }
+
+
+    .filters{
+
+        flex-wrap:wrap;
+
+    }
+
+
+    .task-card{
+
+        flex-direction:column;
+
+    }
+
+
+    .task-buttons{
+
+        width:100%;
+
+        flex-wrap:wrap;
+
+    }
+
+
+    .task-buttons button{
+
+        flex:1;
+
+    }
+
+
+    .modal-content{
+
+        width:90%;
+
+    }
+
+}
